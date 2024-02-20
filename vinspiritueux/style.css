@@ -1,0 +1,23 @@
+h1 {
+    color: darkolivegreen;
+    font-size: 100px;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    background-image: url(images/bandeau.png);
+}
+
+.bandeau {
+    background-image: 'images/bandeau.png';
+    background-position: right 100px;
+}
+
+h2 {
+    color: darkolivegreen;
+    font-size: 20px;
+    font-family: 'arial';
+    text-align: center;
+}
+
+.cgv {
+    color: crimson;
+}

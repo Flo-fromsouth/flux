@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .parent {
+            border: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: stretch;
+            align-content: stretch;
+
+
+            .enfant {
+                border: 1px red solid;
+                width: 40%
+            }
+        }
+
+        /*mode desktop*/
+        @media(min-width:600px) {
+            .parent {
+                border: none;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: stretch;
+                align-content: stretch;
+            }
+
+            .enfant {
+                border: 1px red solid;
+                width: 40%
+            }
+        }
+
+        /*mode mobile*/
+        @media(max-width:600px) {
+            .parent {
+                border: none;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: stretch;
+                align-content: stretch;
+            }
+
+
+            .enfant {
+                border: 1px red solid;
+                width: 100%
+            }
+        }
+    </style>
+
+    <div class="parent">
+
+        <div class="enfant">box1</div>
+        <div class="enfant">box2</div>
+        <div class="enfant">box3</div>
+
+
+    </div>
+
+</body>
+
+</html>

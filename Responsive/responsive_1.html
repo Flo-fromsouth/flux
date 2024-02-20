@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive 1er excercice</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            border: 3px black solid;
+            width: 80%;
+            padding: 50px;
+            margin: 50px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: stretch;
+            align-content: stretch;
+        }
+
+        .enfant1 {
+            border: 3px violet solid;
+            width: 45%;
+            padding: 30px;
+            margin: 10px;
+
+
+        }
+
+        /* mode desktop*/
+        @media(min-width : 960px) {
+            .container {
+                border: 3px black solid;
+                width: 80%;
+
+            }
+
+            .enfant1 {
+                border: 3px violet solid;
+                width: 45%;
+
+
+            }
+        }
+
+        /* mode tablette*/
+        @media (max-width : 960px) {
+            .container {
+                border: 3px black solid;
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: stretch;
+                align-content: stretch;
+
+            }
+
+            .enfant1 {
+                border: 3px violet solid;
+                width: 45%;
+
+
+            }
+
+        }
+    </style>
+
+    <html>
+    <div class="container">
+        <div class="enfant1"></div>
+        <div class="enfant1"></div>
+
+    </div>
+
+    </html>
+</body>

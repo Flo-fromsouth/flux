@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox_imbriqués</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            border: none;
+            width: 1280px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .container_haut {
+            border: 3px black solid;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: 20px;
+
+        }
+
+        .parents1 {
+            background-color: darkcyan;
+            border: 3px black solid;
+            width: 100%;
+            height: 150px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: stretch;
+            align-content: space-between;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+
+        .container_bis {
+            border: none;
+            width: 103%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: stretch;
+            align-content: space-evenly;
+
+
+        }
+
+        .container_gauche {
+            border: 3px black solid;
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: stretch;
+            align-content: space-evenly;
+            padding: 20px;
+            margin-left: 20px;
+
+        }
+
+        .enfant1 {
+            border: 3px black solid;
+            background-color: coral;
+            justify-content: space-around;
+            width: 100%;
+            height: 400px;
+            margin: 20px;
+            padding: 20px
+        }
+
+        .container_droit {
+            border: 3px black solid;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: stretch;
+            align-content: space-evenly;
+            margin-right: 20px;
+            margin-left: 20px;
+            padding: 20px
+        }
+
+        .enfant2 {
+            border: 3px black solid;
+            background-color: darkslategray;
+            justify-content: space-around;
+            margin: 20px;
+            height: 100%;
+            padding: 20px;
+
+        }
+    </style>
+
+
+    <div class="container">
+        <div class="container_haut">
+            <div class="parents1"></div>
+            <div class="parents1"></div>
+            <div class="parents1"></div>
+        </div>
+
+        <div class=" container_bis">
+            <div class="container_gauche">
+                <div class="enfant1"></div>
+                <div class="enfant1"></div>
+
+            </div>
+
+            <div class="container_droit">
+                <div class="enfant2"></div>
+                <div class="enfant2"></div>
+                <div class="enfant2"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>

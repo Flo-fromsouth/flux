@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Création d'un formulaire</title>
+
+</head>
+
+
+<body>
+
+
+
+    <p>CREATION D'UN FORMULAIRE</p>
+
+    <form action="" method="post">
+
+        <fieldset>
+            <legend>Fiche de renseignements</legend>
+
+            <label for="prenom">Prenom</label><br>
+            <input type="text" id="prenom" name="prenom" value="" required /><br>
+
+            <label for="nom">Nom</label><br>
+            <input type="text" id="nom" name="nom" value="" required /><br>
+
+            <label for="email">Email</label><br>
+            <input type="text" id="email" name="email" value="" required /><br>
+
+            <label for="date">Date</label><br>
+            <input type="date" id="date" name="date" value="" required /><br>
+            <br>
+
+            <fieldset>
+                <legend>Diplômes</legend>
+
+                <input type="radio" id="brevet" name="brevet" value="" required />
+                <label for="">Brevet</label><br>
+
+                <input type="radio" id="bac" name="bac" value="" required />
+                <label for="">BAC/label><br>
+
+                    <input type="radio" id="bts" name="bts" value="" required />
+                    <label for="">BTS</label><br>
+
+                    <input type="radio" id="licence" name="licence" value="" required />
+                    <label for="">Licence</label><br>
+
+            </fieldset>
+
+            </textarea>
+
+            <br>
+            <input type="submit" id="submitbutton" value="soumettre" />
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Informations supplémentaires</legend>
+
+            <input type="checkbox" id="cgv" name="accepter les cgv" value="" required />
+            <label for="">Accepter les cgv</label><br>
+
+            <input type="radio" id="cgv" name="couleur sombre" value="" required />
+            <label for="">couleur sombre</label><br>
+
+            <input type="radio" id="cgv" name="couleur claire" value="" required />
+            <label for="">couleur claire</label><br>
+
+            <br>
+            <label for="">Lieu de résidence</label><br>
+            <select id="codepostal">
+                <option value="Paris">Paris</option>
+                <option value="Toulouse">Toulouse</option>
+                <option value="Bordeaux">Borbeaux</option>
+            </select>
+
+            <label for="département">choisir un département</label>
+            <select name="departement" id="departement">choisir un département> <choisir un département>
+                    <optgroup label="Ile de France">
+                        <option value="Paris">75</option>
+                        <option value="Les Yvelines">78</option>
+                        <option value="Seine Saint Denis">94</option>
+                    </optgroup>
+            </select>
+
+            <br><br>
+
+            <label for="pays">choisir un pays</label>
+            <input list="pays" name="LesPays" id="LesPays">
+
+            <!-- les datalist se font en javascript-->
+            <datalist id="pays">
+                <option value="Albanie">
+                <option value="Allemagne">
+                <option value="Belgique">
+                <option value="Bresil">
+                <option value="Espagne">
+                <option value="France">
+                <option value="Mozambique">
+                <option value="Russie">
+            </datalist>
+
+        </fieldset>
+
+    </form>
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Inscription et choix de la formation</title>
+</head>
+
+<body>
+    <h1> FORMULAIRE D'INSCRIPTION</h1>
+
+    <form action="" method="post">
+
+        <fieldset>
+            <legend>Fiche de renseignements</legend>
+
+            <label for="prenom">Prenom</label><br>
+            <input type="text" id="prenom" name="prenom" value="" required /><br>
+
+            <label for="nom">Nom</label><br>
+            <input type="text" id="nom" name="nom" value="" required /><br>
+
+            <label for="email">Email</label><br>
+            <input type="text" id="email" name="email" value="" required /><br>
+
+            <label for="telephone">Téléphone</label><br>
+            <input type="text" id="telephone" name="telephone" value="" required /><br>
+
+            <label for="date">Date de naissance</label><br>
+            <input type="text" id="date" name="date" value="" required /><br>
+            <br>
+
+            <label for="diplome">Diplôme</label><br>
+
+            <input type="radio" id="brevet" name="brevet" value="" required />
+            <label for="">Brevet</label><br>
+
+            <input type="radio" id="bac" name="bac" value="" required />
+            <label for="">BAC<br>
+
+                <input type="radio" id="bts" name="bts" value="" required />
+                <label for="">BTS</label><br>
+
+                <input type="radio" id="licence" name="licence" value="" required />
+                <label for="">Licence</label><br>
+
+                <input type="radio" id="master" name="master" value="" required />
+                <label for="">Master</label><br>
+
+                <input type="radio" id="doctorat" name="doctorat" value="" required />
+                <label for="">Doctorat</label><br>
+                <br>
+
+                <label for="formation_choix">Formation choisie</label>
+                <select name="formation_choix" id="formation_choix">choisir une formation>
+                    <option value="Bureautique">Bureautique</option>
+                    <option value="Comptabilité">Comptabilité</option>
+                    <option value="Photoshop">Photoshop</option>
+                    <option value="Illustrator">Illustrator</option>
+                </select>
+
+                <br><br><label for="actuellement">Actuellement, vous êtes :</label>
+                <select name="situation" id="situation">choisir une formation>
+                    <option value="salarié">Salarié</option>
+                    <option value="Chomage">Au chômage</option>
+                    <option value="retraité">Retraité</option>
+
+                </select>
+                <br><br>
+                <legend> Veulliez rédiger votre lettre de motivation</legend>
+                <textarea rows="5" cols="88"></textarea>
+
+
+                <br><br>
+                <input type="submit" id="submitbutton" value="soumettre" />
